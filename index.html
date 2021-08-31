@@ -1,0 +1,291 @@
+	
+	
+		<!--Barebones --> 
+		
+	<!DOCTYPE html>
+    <html lang="en">
+    <head>  
+   	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	 
+		  <link rel='stylesheet' media='screen and (min-width: 301px) and (max-width: 550px)' href='css/style300.css' />
+    <link rel='stylesheet' media='screen and (min-width: 551px) and (max-width: 1024px)' href='css/style600.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1025px) and (max-width: 1920px)' href='css/style800.css' />
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+        <link rel="canonical" href="https://url/">
+	<title>My First Website</title>
+   	<link rel="icon" type="image/ico" href="">
+	<script async src="js/calc.js"></script>
+   	<link rel="stylesheet" href="speed.css">
+    	<link rel="icon" type="image/ico" href="https://mathtool400.com/favicon.ico">
+    	<meta name="description" content=" ">  
+    	<meta name="keywords" content="">  
+		<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width:33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+    </head>
+	
+    <body>
+	
+	<!-- https://www.w3schools.com/html/  -->
+		
+	<div id="container">
+	<h1 style="color:blue;text-align:center">Vitamin Units Conversion</h1>
+	<h2 style="color:blue;text-align:center">Convert Between IU & MG and MCG</h1>
+	<p style= "color:blue;text-align:center">IU = International units<br>
+	MG = Miligrams<br>
+	MCG = Micrograms</p>
+
+
+    <div class="row">
+  <div class="column" style="background-color:#aaa;">
+  <h2 style="color:blue;text-align:left">Vitamin A</h1>
+	
+	
+	<h3 style="color:blue";>Retinol Preperation</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu" onkeyup="retin()"text size=4></th>
+        <th>
+	 <input type="text" id="mg" name="mg" text size=4></th>
+        <th>
+	 <input type="text" id="mcg" name="mcg" text size=4></th>
+      </tr>
+ </table>
+
+
+ 
+ <h3 style="color:blue";>Beta-Carotene Preperation</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu1" maxlength="4" text size=4  onkeyup="beta()"></th>
+        
+	 <th> <input type="text" id="mg1" name="pin" text size=4</th>
+        
+	<th> <input type="text" id="mcg1" name="pin" text size=4></th>
+      </tr>
+			
+	<!--2nd-->
+	
+ </table>
+  
+     </div>
+   
+   
+ <div class="column" style="background-color:#bbb;">
+	 <h2 style="color:blue;text-align:center">Vitamin D</h2>
+
+   <h3 style="color:blue";>D3, or cholecalciferol</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iud3" onkeyup="d3()"text size=4></th>
+        <th>
+	 <input type="text" id="mgd3" name="pin" text size=4></th>
+        <th>
+	 <input type="text" id="mcgd3" name="pin" text size=4></th>
+      </tr>
+		
+	
+ </table>
+      
+	</div>
+ <!-- </table> -->
+<!-- 
+ <h3 style="color:blue";>Beta-Carotene Preperation</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu1" maxlength="4" text size=
+	 4  onkeyup="beta()"></th>
+        
+	 <th> <input type="text" id="mg1" name="pin" text size=4</th>
+        
+	<th> <input type="text" id="mcg1" name="pin" text size=4></th>
+      </tr>
+			
+	
+	
+ </table>
+-->
+   <div class="column" style="background-color:#bbb;">
+<h2 style="color:blue;text-align:center">Vitamin E</h2>
+	<h3 style="color:blue";>d-alpha-tocopherol</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu" onkeyup="retin()"text size=4></th>
+        <th>
+	 <input type="text" id="mg" name="pin" text size=4></th>
+        <th>
+	 <input type="text" id="mcg" name="pin" text size=4></th>
+      </tr>
+	   </table>
+ <h3 style="color:blue";>dl-alpha-tocopherol</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu1" maxlength="4" text size=
+	 4  onkeyup="beta()"></th>
+        
+	 <th> <input type="text" id="mg1" name="pin" text size=4</th>
+        
+	<th> <input type="text" id="mcg1" name="pin" text size=4></th>
+      </tr>
+ </table>
+</div>
+</body>
+</html>
+   
+  <!--OCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<h2>Two Equal Columns</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>-->
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ 
+ <!--<p>IU = International units<br>
+	MG = Miligrams<br>
+	MCG = Micrograms</p>
+	<h3 style="color:blue";>Retinol Preperation</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu" onkeyup="retin()"text size=4></th>
+        <th>
+	 <input type="text" id="mg" name="pin" text size=4></th>
+        <th>
+	 <input type="text" id="mcg" name="pin" text size=4></th>
+      </tr>
+ <h3 style="color:blue";>Beta-Carotene Preperation</h3>
+	<table border="1" cellpadding="1" cellspacing="0">
+	<tr>
+        <th>IU</th>
+        <th>MG</th>
+        <th>MCG</th>
+      </tr>
+	  <tr>
+	 <th><input type="text" id="iu1" maxlength="4" text size=
+	 4  onkeyup="beta()"></th>
+        
+	 <th> <input type="text" id="mg1" name="pin" text size=4</th>
+        
+	<th> <input type="text" id="mcg1" name="pin" text size=4></th>
+      </tr>
+			
+	
+	
+ </table>
+
+	</div>
+    	
+<!--<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<h1 style="color:blue;text-align:center">Vitamin Units Conversion</h1>
+	<h2 style="color:blue;text-align:center">Convert Between IU & MG and MCG</h1>
+	<h2 style="color:blue;text-align:center">Vitamin A</h1>
+<div class="w3-cell-row">
+  <div class="w3-container w3-red w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+  <div class="w3-container w3-green w3-cell">
+    <p>Hello W3.CSS Layout.</p>
+  </div>
+</div>
+
+</body>
+</html>
+-->
+	
+    	
+</body>
+</html>
+ 
